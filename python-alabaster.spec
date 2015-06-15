@@ -31,9 +31,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A configurable sidebar-enabled Sphinx theme
 
-This theme is a modified “Kr” Sphinx theme from @kennethreitz
+This theme is a modified "Kr" Sphinx theme from @kennethreitz
 (especially as used in his Requests project), which was itself
-originally based on @mitsuhiko’s theme used for Flask & related
+originally based on @mitsuhiko's theme used for Flask & related
 projects.
 
 %package -n python3-%{module}
@@ -44,9 +44,9 @@ Requires:	python3-modules
 %description -n python3-%{module}
 A configurable sidebar-enabled Sphinx theme
 
-This theme is a modified “Kr” Sphinx theme from @kennethreitz
+This theme is a modified "Kr" Sphinx theme from @kennethreitz
 (especially as used in his Requests project), which was itself
-originally based on @mitsuhiko’s theme used for Flask & related
+originally based on @mitsuhiko's theme used for Flask & related
 projects.
 
 %prep
@@ -100,4 +100,3 @@ rm -rf $RPM_BUILD_ROOT
 %{py3_sitescriptdir}/%{module}
 %{py3_sitescriptdir}/%{module}-%{version}-py*.egg-info
 %endif
-
