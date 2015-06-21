@@ -5,11 +5,13 @@
 
 %define 	module	alabaster
 Summary:	A configurable sidebar-enabled Sphinx theme
+Summary(pl.UTF-8):	Konfigurowany motyw z bocznym panelem dla Sphinksa
 Name:		python-%{module}
 Version:	0.7.4
 Release:	1
 License:	BSD
 Group:		Libraries/Python
+#Source0Download: https://pypi.python.org/pypi/alabaster
 Source0:	https://pypi.python.org/packages/source/a/alabaster/%{module}-%{version}.tar.gz
 # Source0-md5:	ba31bf652194200428aa4e3d976f5ccd
 URL:		https://pypi.python.org/pypi/alabaster
@@ -29,15 +31,24 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A configurable sidebar-enabled Sphinx theme
+A configurable sidebar-enabled Sphinx theme.
 
 This theme is a modified "Kr" Sphinx theme from @kennethreitz
 (especially as used in his Requests project), which was itself
 originally based on @mitsuhiko's theme used for Flask & related
 projects.
 
+%description -l pl.UTF-8
+Konfigurowany motyw z bocznym panelem (sidebarem) dla Sphinksa.
+
+Motyw ten to zmodyfikowany motyw Sphinksa "Kr" od @kennethreitz
+(konkretnie wersja używana w jego projekcie Requests), pierwotnie
+oparty na motywie @mitsuhiko używanym w projekcie Flash i powiązanych
+z nim.
+
 %package -n python3-%{module}
 Summary:	A configurable sidebar-enabled Sphinx theme
+Summary(pl.UTF-8):	Konfigurowany motyw z bocznym panelem dla Sphinksa
 Group:		Libraries/Python
 Requires:	python3-modules
 
@@ -48,6 +59,14 @@ This theme is a modified "Kr" Sphinx theme from @kennethreitz
 (especially as used in his Requests project), which was itself
 originally based on @mitsuhiko's theme used for Flask & related
 projects.
+
+%description -n python3-%{module} -l pl.UTF-8
+Konfigurowany motyw z bocznym panelem (sidebarem) dla Sphinksa.
+
+Motyw ten to zmodyfikowany motyw Sphinksa "Kr" od @kennethreitz
+(konkretnie wersja używana w jego projekcie Requests), pierwotnie
+oparty na motywie @mitsuhiko używanym w projekcie Flash i powiązanych
+z nim.
 
 %prep
 %setup -q -n %{module}-%{version}
