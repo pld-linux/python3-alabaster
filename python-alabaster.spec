@@ -16,7 +16,7 @@ Source0:	https://pypi.python.org/packages/source/a/alabaster/%{module}-%{version
 # Source0-md5:	ba31bf652194200428aa4e3d976f5ccd
 URL:		https://pypi.python.org/pypi/alabaster
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 %if %{with python2}
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools >= 7.0
