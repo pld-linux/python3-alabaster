@@ -7,26 +7,26 @@
 Summary:	A configurable sidebar-enabled Sphinx theme
 Summary(pl.UTF-8):	Konfigurowany motyw z bocznym panelem dla Sphinksa
 Name:		python-%{module}
-Version:	0.7.4
-Release:	4
+Version:	0.7.6
+Release:	1
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.python.org/pypi/alabaster
 Source0:	https://pypi.python.org/packages/source/a/alabaster/%{module}-%{version}.tar.gz
-# Source0-md5:	ba31bf652194200428aa4e3d976f5ccd
+# Source0-md5:	169cdce2a96b75bff8cb8a59d938673f
 URL:		https://pypi.python.org/pypi/alabaster
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.710
 %if %{with python2}
-BuildRequires:	python-devel
+BuildRequires:	python-devel >= 1:2.6
 BuildRequires:	python-setuptools >= 7.0
 %endif
 %if %{with python3}
-BuildRequires:	python3-devel
-BuildRequires:	python3-modules
+BuildRequires:	python3-devel >= 1:3.2
+BuildRequires:	python3-modules >= 1:3.2
 BuildRequires:	python3-setuptools >= 7.0
 %endif
-Requires:	python-modules
+Requires:	python-modules >= 1:2.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -50,7 +50,7 @@ z nim.
 Summary:	A configurable sidebar-enabled Sphinx theme
 Summary(pl.UTF-8):	Konfigurowany motyw z bocznym panelem dla Sphinksa
 Group:		Libraries/Python
-Requires:	python3-modules
+Requires:	python3-modules >= 1:3.2
 
 %description -n python3-%{module}
 A configurable sidebar-enabled Sphinx theme
