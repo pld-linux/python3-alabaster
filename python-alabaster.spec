@@ -7,13 +7,13 @@
 Summary:	A configurable sidebar-enabled Sphinx theme
 Summary(pl.UTF-8):	Konfigurowany motyw z bocznym panelem dla Sphinksa
 Name:		python-%{module}
-Version:	0.7.9
+Version:	0.7.10
 Release:	1
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.python.org/simple/alabaster
 Source0:	https://files.pythonhosted.org/packages/source/a/alabaster/%{module}-%{version}.tar.gz
-# Source0-md5:	b29646a8bbe7aa52830375b7d17b5d7a
+# Source0-md5:	7934dccf38801faa105f6e7b4784f493
 URL:		https://pypi.python.org/pypi/alabaster
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
