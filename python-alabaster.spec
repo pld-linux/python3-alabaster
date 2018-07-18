@@ -7,14 +7,14 @@
 Summary:	A configurable sidebar-enabled Sphinx theme
 Summary(pl.UTF-8):	Konfigurowany motyw z bocznym panelem dla Sphinksa
 Name:		python-%{module}
-Version:	0.7.10
-Release:	2
+Version:	0.7.11
+Release:	1
 License:	BSD
 Group:		Libraries/Python
-#Source0Download: https://pypi.python.org/simple/alabaster
+#Source0Download: https://pypi.org/simple/alabaster/
 Source0:	https://files.pythonhosted.org/packages/source/a/alabaster/%{module}-%{version}.tar.gz
-# Source0-md5:	7934dccf38801faa105f6e7b4784f493
-URL:		https://pypi.python.org/pypi/alabaster
+# Source0-md5:	a23493869f819326a7f62deb7dbdb849
+URL:		https://pypi.org/project/alabaster/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 %if %{with python2}
@@ -99,7 +99,7 @@ rm -rf $RPM_BUILD_ROOT
 %if %{with python2}
 %files
 %defattr(644,root,root,755)
-%doc README.rst
+%doc LICENSE README.rst
 %{py_sitescriptdir}/%{module}
 %{py_sitescriptdir}/%{module}-%{version}-py*.egg-info
 %endif
@@ -107,7 +107,7 @@ rm -rf $RPM_BUILD_ROOT
 %if %{with python3}
 %files -n python3-%{module}
 %defattr(644,root,root,755)
-%doc README.rst
+%doc LICENSE README.rst
 %{py3_sitescriptdir}/%{module}
 %{py3_sitescriptdir}/%{module}-%{version}-py*.egg-info
 %endif
