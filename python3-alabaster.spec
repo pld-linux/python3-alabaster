@@ -3,7 +3,7 @@ Summary:	A configurable sidebar-enabled Sphinx theme
 Summary(pl.UTF-8):	Konfigurowany motyw z bocznym panelem dla Sphinksa
 Name:		python3-%{module}
 Version:	1.0.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/alabaster/
